@@ -6,11 +6,12 @@ df = pd.read_csv('../dataset/datos.csv', delimiter=';')
 
 # Indicamos que el archivo contiene el nombre de las columnas
 df.head()
+# df.info(verbose=True)
 
 # Filtramos por el nombre del municipio
-dfMunicipio = df.filter(items=[df.columns[1]])
+dfClase = df.filter(items=[df.columns[5]])
 
 # Agrupamos por nombre de municipio y contamos los registros de cada grupo
-dfGrouped = dfMunicipio.groupby([dfMunicipio.columns[0]]).size()
+dfGrouped = dfClase.groupby([dfClase.columns[0]]).size()
 
 # print dfGrouped.to_string()
