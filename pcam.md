@@ -1,25 +1,28 @@
-**Universidad Eafit**
+
+
+## proyecto 4 hpc archivo PCAM
 
 Curso tópicos en telemática 2020-1 
 
-Integrantes: 
+## Integrantes: 
 
 Sebastian Ortiz Serna, Sebastian Ramirez Lopez, Stefania Zapata Osorio. 
 
 
-Introducción
+## Introducción
 
-En el presente proyecto se dedica a ser un caso de estudio en el cual se intenta dar solución a cuáles son los municipios mas afectados con accidentes de coches.  Esto se logra usando dataets del área metropolitana tomados de la página https://datosabiertos.metropol.gov.co/search/type/dataset
-de este tomando el dataset Accidentalidad Valle de Aburra, el cual muestra los municipios, fechas, barrios, etc. En los que se presentan accidentes en toda el área.  Lo que hace el proyecto es generar un análisis de los datos para saber cual es el municipio más afectado. 
+En el presente proyecto se dedica a ser un caso de estudio en el cual se intenta dar solución a cuáles son los municipios mas afectados con accidentes de coches.  Esto se logra usando dataets del área metropolitana tomados de la página [datos abiertos](https://datosabiertos.metropol.gov.co/search/type/dataset)
+de este tomando el dataset [Accidentalidad Valle de Aburra](https://datosabiertos.metropol.gov.co/dataset/accidentalidad-valle-de-aburrá) , el cual muestra los municipios, fechas, barrios, etc. En los que se presentan accidentes en toda el área.  Lo que hace el proyecto es generar un análisis de los datos para saber cual es el municipio más afectado. 
 
-Análisis 
+## Análisis 
 
-En este proyecto se usan dos versiones para completar el problema, una de forma secuencial y la otra usando mpi, para este desarrollo se decidió usar Python, este permite usar mpi. 
-El análisis secuencial
+En este proyecto se usan dos versiones para completar el problema, una de forma secuencial y la otra paralela, para este desarrollo se decidió usar Python, este permite usar mpi. 
 
-El código secuencial esta ubicado en……..   e
+**El análisis secuencial**
 
-El código paralelizado  es ubicado en…. 
+El código secuencial esta ubicado en la carpeta [serial](https://github.com/sortizs/pr4-hpc/tree/master/serial), en este tenemos el archivo acc_por_ciudad.py en este se obtiene el numero de accidentes por ciudad o municipio.  
+
+El código paralelizado  es ubicado en la carpeta [paralelo](https://github.com/sortizs/pr4-hpc/tree/master/paralelo).  
 
 
 tiempos 
@@ -27,7 +30,7 @@ tiempos
 conclusiones
 
 
-Metodología de desarrollo  
+## Metodología de desarrollo PCAM
 
 
 
