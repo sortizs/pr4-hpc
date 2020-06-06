@@ -35,17 +35,27 @@ conclusiones
 Primero comencemos con el codigo de mpi, en este usamos las siguientes tareas. 
 
 **Partición**.
+
 **Tarea 1:** Extraer de datos del dataset.
+
 **Tarea 2:** Enviar mensajes desde el proceso root.
+
 **Tarea 3:** Seleccionar los registros por ciudad y enviarlos al método reducer (Proceso 1).
+
 **Tarea 4:** Seleccionar los registros por clase y enviarlos al método reducer (Proceso 2).
+
 **Tarea 5:** Seleccionar los registros por día y enviarlos al método reducer (Proceso 3).
+
 **Tarea 6:** Seleccionar los registros por gravedad y enviarlos al método reducer (Proceso 4).
+
 **Tarea 7:** Procesar los datos recibidos por cada proceso.
+
 **Tarea 8:** Mostrar los resultados.
 
-**Comunicación.**\n
+**Comunicación.**
+
 ![alt text](https://github.com/sortizs/pr4-hpc/blob/master/images/diagrama-mpi.jpg?raw=true)
+
 **Aglomeración.**
 **Recolección:** Tarea 1.
 **Procesamiento:** Tareas 2-7.
