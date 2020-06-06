@@ -54,8 +54,6 @@ Primero comencemos con el codigo de mpi, en este usamos las siguientes tareas.
 
 **Comunicación.**
 
-<img align="center" width="600" height="300" src="https://github.com/sortizs/pr4-hpc/blob/master/images/diagrama-mpi.jpg?raw=true">
-
 ![alt text](https://github.com/sortizs/pr4-hpc/blob/master/images/diagrama-mpi.jpg?raw=true)
 
 **Aglomeración.**

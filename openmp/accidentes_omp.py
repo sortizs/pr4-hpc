@@ -16,8 +16,8 @@ dfDia = df.filter(items=[df.columns[4]])
 dfClase = df.filter(items=[df.columns[5]])
 
 listas = [dfMunicipio, dfDia, dfClase]
-
-p = Pool(processes=sys.argv)
+n = int(sys.argv)
+p = Pool(processes=n)
 result = p.map(reducer, listas)
 
 
