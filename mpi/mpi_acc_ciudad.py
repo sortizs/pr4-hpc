@@ -16,7 +16,7 @@ def reduce(num):
 if rank == 0:
     comm.send(1, dest = 1) # ciudad
 
-if rank > 0:
+if rank == 1:
     num = comm.recv(source = 0)
     dfR = reduce(num)
     print(dfR.to_string())
