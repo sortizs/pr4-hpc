@@ -45,7 +45,7 @@ Primero comencemos con el codigo de mpi, en este usamos las siguientes tareas.
 **Tarea 8:** Mostrar los resultados.
 
 **Comunicación.**
-https://raw.githubusercontent.com/sortizs/pr4-hpc/blob/master/images/diagrama-mpi.jpg
+![alt text](https://github.com/sortizs/pr4-hpc/blob/master/images/diagrama-mpi.jpg?raw=true)
 **Aglomeración.**
 **Recolección:** Tarea 1.
 **Procesamiento:** Tareas 2-7.
