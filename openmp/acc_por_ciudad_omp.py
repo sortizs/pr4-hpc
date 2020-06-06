@@ -20,5 +20,5 @@ p = Pool(processes=3)
 print("antes de map") 
 result = p.map(reducer, listas)
 print("ya va a imprimir el cosigo")
-print(result.to_string()) 
+ 
 
