@@ -70,6 +70,12 @@ Primero comencemos con el codigo de mpi, en este usamos las siguientes tareas.
 
 
 
-Luego seguimos con el OpenMP.
+Luego seguimos con el OpenMP. para este se tomo como vace el objetivo de tener los posibles 4 cores, en esta imagen se muestra el caso de que pasa con 3 cores. 
+en el caso presente se toman 3 dataframes que son dfMunicipio, dfDia,dfClase. 
+y se distribullen sobre el reducer el cual usa la cantidade de cores para poder simplifcarlos y mostrar el resultado requerido.  
+
 
 ![alt text](https://github.com/sortizs/pr4-hpc/blob/master/images/diagrama-omp.jpeg?raw=true)
+
+
+en este caso, al usar la libreria  [multiprocessing](https://docs.python.org/3.7/library/multiprocessing.html) se usa el metodo map el cual distribulle los dataframes entre los cores y luego se encarga de retornarnos una lista con todos los dataframes simplificados. 

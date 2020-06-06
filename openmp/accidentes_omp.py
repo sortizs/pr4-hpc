@@ -17,7 +17,7 @@ dfClase = df.filter(items=[df.columns[5]])
 
 listas = [dfMunicipio, dfDia, dfClase]
 
-p = Pool(processes=2)
+p = Pool(processes=3)
 result = p.map(reducer, listas)
 
 
