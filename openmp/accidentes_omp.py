@@ -1,5 +1,6 @@
 from multiprocessing import Pool 
 import pandas as pd
+import sys 
 
 def reducer(df):
     dfGrouped = df.groupby([df.columns[0]]).size()
@@ -15,9 +16,8 @@ dfDia = df.filter(items=[df.columns[4]])
 dfClase = df.filter(items=[df.columns[5]])
 
 listas = [dfMunicipio, dfDia, dfClase]
-print("ingrese el numero de cores")
-n = input()
-p = Pool(processes=n)
+
+p = Pool(processes=sys.argv)
 result = p.map(reducer, listas)
 
 
