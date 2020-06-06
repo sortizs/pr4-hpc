@@ -15,11 +15,12 @@ dfDia = df.filter(items=[df.columns[4]])
 dfClase = df.filter(items=[df.columns[5]])
 
 listas = [dfMunicipio, dfDia, dfClase]
-
-p = Pool(processes=4)
-print("antes de map") 
+print("ingrese el numero de cores")
+n = input()
+p = Pool(processes=n)
 result = p.map(reducer, listas)
-print("ya va a imprimir el cosigo")
-for i in result: 
-    print(i.to_string())
+
+
+##for i in result: 
+##    print(i.to_string())
 
