@@ -43,6 +43,9 @@ en el caso de los openmp usamos para ejecutar
 ```
 $ python3 accidentes_omp.py
 ``` 
-
+y para medir el tiempo usamos 
+```
+$ time python3 accidentes_omp.py
+``` 
 
 
