@@ -14,7 +14,7 @@ dfMunicipio = df.filter(items=[df.columns[1]])
 dfDia = df.filter(items=[df.columns[4]])
 dfClase = df.filter(items=[df.columns[5]])
 
-listas = {dfMunicipio, dfDia, dfClase}
+listas = [dfMunicipio, dfDia, dfClase]
 
 p = Pool(processes=3)
 print("antes de map") 
