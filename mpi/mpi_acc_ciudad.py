@@ -19,3 +19,4 @@ if rank == 0:
 if rank > 0:
     num = comm.recv(source = 0)
     dfR = reduce(num)
+    print(dfR.to_string())
