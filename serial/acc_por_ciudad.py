@@ -2,7 +2,7 @@
 import pandas as pd
 
 # Leemos el archivo desde un dataset al dataframe
-df = pd.read_csv('../dataset/datos.csv', delimiter=';')
+df = pd.read_csv('../dataset/datos.csv', delimiter=';', encoding='ISO-8859-1')
 
 # Indicamos que el archivo contiene el nombre de las columnas
 df.head()
