@@ -1,17 +1,20 @@
 # MapReduce secuencial
 import pandas as pd
 
-# Leemos el archivo desde un dataset al dataframe
+def map(df):
+    dfMapped = df.filter(items=[df.columns[7]])
+    return dfMapped
+
+def reduce(df):
+    dfReduced = df.groupby([df.columns[0]]).size()
+    return dfReduced
+
 df = pd.read_csv('../dataset/datos.csv', delimiter=';', encoding='ISO-8859-1')
 
-# Indicamos que el archivo contiene el nombre de las columnas
 df.head()
-# df.info(verbose=True)
 
-# Filtramos por el nombre del municipio
-dfGravedad = df.filter(items=[df.columns[7]])
+dfGravedad = map(df)
 
-# Agrupamos por nombre de municipio y contamos los registros de cada grupo
-dfGrouped = dfGravedad.groupby([dfGravedad.columns[0]]).size()
+dfGrouped = reduce(dfGravedad)
 
-# print dfGrouped.to_string()
+print(dfGrouped.to_string())
