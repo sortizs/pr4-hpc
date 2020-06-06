@@ -32,7 +32,7 @@ conclusiones
 
 ## Metodología de desarrollo PCAM
 
-primero comencemos con el codigo de mpi, en este usamos las siguientes tareas. 
+Primero comencemos con el codigo de mpi, en este usamos las siguientes tareas. 
 
 **Partición**.
 **Tarea 1:** Extraer de datos del dataset.
@@ -45,10 +45,7 @@ primero comencemos con el codigo de mpi, en este usamos las siguientes tareas.
 **Tarea 8:** Mostrar los resultados.
 
 **Comunicación.**
-
-
-
-
+https://raw.githubusercontent.com/sortizs/pr4-hpc/blob/master/images/diagrama-mpi.jpg
 **Aglomeración.**
 **Recolección:** Tarea 1.
 **Procesamiento:** Tareas 2-7.
