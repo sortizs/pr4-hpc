@@ -18,7 +18,7 @@ dfGravedad = df.filter(items=[df.columns[7]])
 
 listas = [dfMunicipio, dfDia, dfClase, dfGravedad]
 
-p = Pool(processes=3)
+p = Pool(processes=4)
 result = p.map(reducer, listas)
 
 
