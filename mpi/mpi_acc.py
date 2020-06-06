@@ -5,7 +5,7 @@ comm = MPI.COMM_WORLD
 rank = comm.Get_rank()
 size = comm.Get_size()
 
-df = pd.read_csv('../dataset/datos.csv', delimiter = ';')
+df = pd.read_csv('../dataset/datos.csv', delimiter = ';', encoding = 'ISO-8859-1')
 df.head()
 
 def reduce(num):
