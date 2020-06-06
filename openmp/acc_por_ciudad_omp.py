@@ -8,7 +8,7 @@ def reducer(fil):
     return dfGrouped
 
 if __name__ == "__main__":
-    df = pd.read_csv('../dataset/datos.csv', delimiter=';')
+    df = pd.read_csv('../dataset/datos.csv', delimiter=';', encoding='ISO-8859-1')
     p = Pool() 
     result = p.map(reducer, df)
     print(result.to_string()) 
