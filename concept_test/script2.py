@@ -6,7 +6,7 @@ def reducer(fil):
     return dfGrouped
 
 
-df = pd.read_csv('../dataset/datos.csv', delimiter=';')
+df = pd.read_csv('../dataset/datos.csv', delimiter=';', encoding='ISO-8859-1')
 df.head()
 dfMunicipio = df.filter(items=[df.columns[1]])
 p = Pool(processes=3) 
