@@ -5,8 +5,17 @@ comm = MPI.COMM_WORLD
 rank = comm.Get_rank()
 size = comm.Get_size()
 
-df = pd.read_csv('../dataset/datos.csv', delimiter = ';')
+df = pd.read_csv('../dataset/datos.csv', delimiter = ';', encoding = 'ISO-8859-1')
 df.head()
 
-dfMunicipio = df.filter(items = [df.columns[1]])
-dfGrouped = dfMunicipio.groupby([dfMunicipio.columns[0]]).size()
+def reduce(num):
+    dfR = df.filter(items = [df.columns[num]])
+    dfGrouped = dfR.groupby([dfR.columns[0]]).size()
+    return dfGrouped
+    
+if rank == 0:
+    comm.send(1, dest = 1) # ciudad
+
+if rank == 1:
+    num = comm.recv(source = 0)
+    reduce(num)
