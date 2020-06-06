@@ -72,4 +72,4 @@ Primero comencemos con el codigo de mpi, en este usamos las siguientes tareas.
 
 Luego seguimos con el OpenMP.
 
-![alt text](https://github.com/sortizs/pr4-hpc/blob/master/images/diagrama-omp.jepg?raw=true)
+![alt text](https://github.com/sortizs/pr4-hpc/blob/master/images/diagrama-omp.jpeg?raw=true)
