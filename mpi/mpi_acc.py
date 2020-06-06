@@ -22,7 +22,7 @@ if rank == 0:
 
 if rank == 1:
     num = comm.recv(source = 0)
-    reduce(num);
+    reduce(num)
 
 if rank == 2:
     num = comm.recv(source = 0)
